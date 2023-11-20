@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de seguimiento</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+    rel="stylesheet">
+  <!-- Favicons -->
+  <link rel="icon" href="/img/favicon-32x32.png">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="/proyecto-unaf/css/style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- JS Files -->
+
+  <script src="/proyecto-unaf/js/script.js"></script>
+</head>
+
+<body>
+  <!-- ======= HEADER(encabezado) ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+    <nav id="navbar" class="navbar"> <!-- .navbar -->
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero"><img src="/proyecto-unaf/img/Logo-completo-Neon-2.png" title="Este es el logo de Atrapados por la ciencia"
+              width="120" height="60"></a></li>
+        <li class="dropdown"><a href="/proyecto-unaf/index.html"><span>Documentación</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#fundament">Fundamentación</a></li>
+            <li><a href="#resume">Métodos</a></li>
+            <li><a href="#services">Sistema Propuesto</a></li>
+            <li><a href="#">Diagrama E - R</a></li>
+            <li><a href="/lista-de-seguimiento-web-main/casos_de_uso/index.html">Casos de uso</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="/lista-de-seguimiento-web-main/tutoriales/index.html">Tutorial</a></li>
+        <li><a class="nav-link scrollto" href="/lista-de-seguimiento-web-main/asistencia_tecnica/index.html">Asistencia
+            Técnica</a></li>
+        <li><a class="nav-link "
+            href="https://play.google.com/store/apps/details?id=com.atrapados.ordenapp">Descarga</a></li>
+        <li><a class="nav-link scrollto" href="login.html"><button>Iniciar sesi&oacute;n</button></a></li>
+        <li><a class="nav-link scrollto" href=""><button id="button2">Regístrate</button></a></li>
+      </ul>
+    </nav><!-- .navbar -->
+  </header><!-- End Header -->
+
+  <section>
+    <main id="main">
+      <!-- ======= My Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title">
+            <span>Diagrama E - R</span>
+            <h2>Diagrama E - R</h2>
+          </div>
+
+          <div class="image  d-flex align-items-stretch justify-content-center "></div>
+          <p>El modelo de entidad-relación (MER) de la base de datos ListaDeControl es un modelo conceptual que
+            representa las entidades y relaciones que se encuentran en la base de datos. Las entidades son objetos del
+            mundo real que se representan en la base de datos, como alumnos, cursos, calificaciones, etc. Las relaciones
+            son las conexiones que existen entre las entidades, como la relación entre un alumno y un curso. El MER de
+            la base de datos ListaDeControl consta de las siguientes entidades:</p>
+          <div class="resume-item pb-0">
+            <ul>
+              <li>Institución: Representa una institución educativa, como una escuela, un colegio o una universidad.
+              </li>
+              <li>TipoUsuario: Representa un tipo de usuario, como alumno, profesor, calificador, etc.</li>
+              <li>Usuario: Representa un usuario individual, como un alumno, un profesor, un calificador, etc.</li>
+              <li>Curso: Representa un curso académico.</li>
+              <li>Localidad: Representa una localidad, como una ciudad, un pueblo o un barrio.</li>
+              <li>Criterios: Representa un criterio de evaluación, como una nota, un examen o un trabajo práctico.</li>
+              <li>Calificador: Representa a una persona que califica a los alumnos.</li>
+              <li>Asignatura: Representa una asignatura.</li>
+              <li>País: Representa un país.</li>
+            </ul>
+          </div>
+          <p>Los resultados de las entrevistas mostraron que los docentes utilizan una lista de alumnos en formato papel
+            para registrar la asistencia y las notas de los estudiantes. Esta lista es elaborada por cada docente y se
+            basa en los criterios de evaluación que considere.</p>
+          <p>Los docentes expresaron que la lista de papel es una herramienta útil, pero que también tiene algunas
+            limitaciones. En particular, mencionaron que:</p>
+          <div class="resume-item pb-0">
+            <ul>
+              <li>Es difícil mantener actualizada la lista.</li>
+              <li>Es difícil compartir la lista con otros docentes.</li>
+              <li>Es difícil analizar los datos de la lista.</li>
+            </ul>
+          </div>
+          <p>Las relaciones entre estas entidades son las siguientes:</p>
+          <div class="resume-item pb-0">
+            <ul>
+              <li>Institución tiene muchos usuarios: Una institución puede tener muchos usuarios, como alumnos,
+                profesores, calificadores, etc.</li>
+              <li>TipoUsuario tiene muchos usuarios: Un tipo de usuario puede tener muchos usuarios, como alumnos,
+                profesores, calificadores, etc.</li>
+              <li> Usuario pertenece a una institución: Un usuario pertenece a una institución educativa, como una
+                escuela, un colegio o una universidad.</li>
+              <li>
+                Usuario tiene un tipo de usuario: Un usuario tiene un tipo de usuario, como alumno, profesor,
+                calificador, etc.
+                Curso tiene muchos alumnos: Un curso puede tener muchos alumnos.
+                Curso tiene una localidad: Un curso está ubicado en una localidad, como una ciudad, un pueblo o un
+                barrio.
+                Criterios tiene muchos cursos: Un criterio de evaluación puede ser utilizado en muchos cursos.
+                Calificador califica a muchos alumnos: Un calificador califica a muchos alumnos.
+                Calificador pertenece a una institución: Un calificador pertenece a una institución educativa, como una
+                escuela, un colegio o una universidad.
+                Asignatura tiene muchos cursos: Una asignatura puede ser impartida en muchos cursos.
+                País tiene muchas instituciones: Un país puede tener muchas instituciones educativas, como escuelas,
+                colegios o universidades.
+                Este MER proporciona una representación conceptual de la base de datos ListaDeControl. Puede utilizarse
+                para comprender cómo se relacionan las entidades y las relaciones en la base de datos.</li>
+            </ul>
+          </div>
+        </div>
+      </section><!-- End My Services Section -->
+    </main>
+  </section>
+  <!-- ======= Sección diccionario ======= -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <span>Diccionario</span>
+        <h2>Diccionario</h2><br>
+        <img src="/proyecto-unaf/img/Diccionario.png" alt="Imagen" text-align="center"
+            display="block" width="1300" height="auto">
+      </div>
+      
+    </div>
+  </section>
+</body>

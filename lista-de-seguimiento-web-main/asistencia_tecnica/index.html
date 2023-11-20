@@ -9,18 +9,22 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
         rel="stylesheet">
-    <!-- Favicons -->
-    <link rel="icon" href="../img/favicon-32x32.png">
-    <!-- CSS File -->
-    <link rel="stylesheet" href="../lista-de-seguimiento-web-main/css/style.css">
+
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../lista-de-seguimiento-web-main/css/style.css">
+    <link rel="stylesheet" href="/proyecto-unaf/css/style.css">
     <!-- JS Files -->
-
     <script src="../js/script.js"></script>
 </head>
 
@@ -33,7 +37,8 @@
                             src="../lista-de-seguimiento-web-main/img/Logo-completo-Neon-2.png" width="120"
                             height="60"></a></li>
                 <li><a class="nav-link scrollto" href="/proyecto-unaf/index.html">Documentación</a></li>
-                <li><a class="nav-link scrollto" href="/lista-de-seguimiento-web-main/tutoriales/index.html">Tutorial</a></li>
+                <li><a class="nav-link scrollto"
+                        href="/lista-de-seguimiento-web-main/tutoriales/index.html">Tutorial</a></li>
                 <li><a class="nav-link scrollto" href="#services">Asistencia Técnica</a></li>
                 <li><a class="nav-link "
                         href="https://play.google.com/store/apps/details?id=com.atrapados.ordenapp">Descarga</a></li>
@@ -47,28 +52,137 @@
     </section><!-- Casos de Uso -->
 
     <!-- Contactos -->
-    <div class="imagen_centrada">
-        <div class="titulo_centrado">
-            <h1>Contactos</h1>
-            <form action="">
-                <div class="form-group">
-                    <label for="Nombre">Usuario: </label>
-                    <input type="text" id="user_name">
+    <section id="Contactos" class="formulario_titulo">
+        <br><br><br>
+        <div class="container">
+            <div class="section-title">
+                <span>Consulta</span>
+                <h2>Consulta</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======= Formulario ======= -->
+    <div class="formulario">
+        <div>
+            <form action="formul">
+                <div>
+                    <label for="user_name">Nombre: </label>
+                    <input type="text" id="user_name" required>
                 </div>
                 <div>
-                    <label for="Asunto">Asunto: </label>
-                    <input type="text" id="user_name">
+                    <label for="correo_user">Correo: </label>
+                    <input type="email" id="correo_user" required>
                 </div>
                 <div>
-                    <textarea name="texto" id="texto_consulta" cols="30" rows="10"></textarea>
+                    <label for="asunto_text">Asunto: </label>
+                    <input type="text" id="asunto_text" required>
                 </div>
-                <input type="submit" value="ENVIAR" class="button_generico">
+                <div>
+                    <textarea placeholder="Ingrese su consulta" name="texto" id="texto_consulta" required cols="30"
+                        rows="10"></textarea>
+                </div>
+                <input type="submit" value="ENVIAR" class="button_generico" required>
             </form>
         </div>
     </div>
+    
+    <!-- Preguntas frecuentes -->
+    <section id="Contactos" class="formulario_titulo">
+        <br><br><br>
+        <div class="container">
+            <div class="section-title">
+                <span>Preguntas frecuentes</span>
+                <h2>Preguntas frecuentes</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Preguntas frecuentes acordeón-->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    ¿Se puede instalar en IOs?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Actualmente, no</strong> contamos con una versión de la aplicación para iOS. Sin embargo,
+                    estamos trabajando en ello y esperamos poder lanzarla en los próximos meses.
+
+                    Para obtener más información sobre el desarrollo de la versión de iOS, visite nuestra página web o
+                    envíenos un correo electrónico a [dirección de correo electrónico].
+
+                    Lamentamos cualquier inconveniente que la falta de una versión de iOS pueda causar a nuestros
+                    usuarios de iOS.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Qué sucede con mis datos si desinstalo la aplicación?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Al desinstalar la aplicación, la base de datos se almacena en el dispositivo. </strong> Por
+                    lo tanto, si desinstala accidentalmente la aplicación o la actualiza, volverá a encontrar sus datos
+                    tal y como los dejó. Sin embargo, se recomienda sincronizar los datos con la nube para evitar la
+                    pérdida de datos en caso de que el dispositivo se dañe o se pierda.
+                    <ol class="lista_ordenada">
+                        <br>
+                        <li>Abra la aplicación.</li>
+                        <li>Toque el botón Menú .</li>
+                        <li>Toque Sincronizar .</li>
+                        <li>Toque Guardar .</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Se puede abrir la aplicación desde el navegador?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Actualmente, no es posible abrir la aplicación desde el navegador.</strong>Sin embargo,
+                    estamos trabajando en una versión web de la aplicación que esperamos lanzar en los próximos meses.
+                    La versión web de la aplicación permitirá a los usuarios acceder a todas las funciones de la
+                    aplicación desde cualquier dispositivo con conexión a Internet.
+                    Para obtener más información sobre el desarrollo de la versión web de la aplicación, visite nuestra
+                    página web
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ======= Footer ======= -->
     <footer class="footer">
-        <p><span>Colman Exequiel A. - Mendoza, Lía B.</span>Copyright © 2023 -Todos los derechos reservados</p>
+
+        <section class="footer">
+            <div class="social">
+                <a href="https://www.instagram.com/caexequielo.o/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/caexequiel"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/lia_belen_m/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/LIABELEN17"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/l%C3%ADa-mendoza-24182b119/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <p><span>Colman Exequiel A. - Mendoza, Lía B. <br><br> </span>Copyright © 2023 -Todos los derechos
+                        reservados</p>
+                    <a href="#">Términos y condiciones</a>
+                </li>
+            </ul>
+        </section>
     </footer>
 </body>
 
